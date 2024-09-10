@@ -51,7 +51,7 @@ def get_task_status(task_id):
         response = {
             'state': task.state,
             'task_id': task.id,
-            'message': "작업이 진행중입니다.",
+            'message': "작업이 시작했습니다",
             'result': None
         }
     elif task.state == 'SUCCESS':
@@ -70,6 +70,14 @@ def get_task_status(task_id):
             'result': None,
             
             'traceback': task.traceback  # 자세한 오류 정보
+        }
+    elif task.state == 'PROGRESS':
+        # 작업이 실패한 경우 예외 정보 포함
+        response = {
+            'state': task.state,
+            'task_id': task.id,
+            'message': "작업이 진행중입니다.",
+            'result': task.info
         }
     else:
         # 기타 상태
@@ -94,7 +102,8 @@ def questions():
             "task_id": None,
             "result": None
         }), 400
-    task = create_questions.apply(args=[uuid_path])
+    task = create_questions.apply_async(args=[uuid_path])
+    task.get()
     response = {
         'state': "PENDING",
         'task_id': None,

@@ -20,7 +20,7 @@ def process_pdf(self, pdf_path):
     self.update_state(state='PROGRESS', meta={
         'ocr_progress': 0,
         'gpt_progress': 0,
-        'total_image': 0,
+        'total_image': len(image_local_urls),
     })
 
     task = group(
