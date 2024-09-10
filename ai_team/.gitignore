@@ -1,0 +1,11 @@
+data/*
+chromas/*
+__pycache__/*
+.env
+test.py
+start_celery.py
+log/*
+데이터베이스 배움터.pdf
+페이지 원본 데이터베이스 배움터.pdf
+*.pyc
+test2.py
