@@ -1,0 +1,102 @@
+.user-card .user-info-title {
+    min-width: 100px
+}
+
+.card.primary-shadow {
+    box-shadow: 0 .125rem .375rem 0 rgba(105,108,255,.3) !important
+}
+
+@media(min-width: 1200px) {
+    .light-style .user-card .border-container-lg {
+        border-right:1px solid #e4e6e8
+    }
+
+    .light-style[dir=rtl] .user-card .border-container-lg {
+        border-right: 0;
+        border-left: 1px solid #e4e6e8
+    }
+}
+
+@media(max-width: 1199.98px) {
+    .light-style .user-card .border-container-lg {
+        padding-bottom:1rem
+    }
+}
+
+@media(min-width: 576px) {
+    .light-style .user-card .border-container {
+        border-right:1px solid #e4e6e8
+    }
+
+    .light-style .timeline .break-text {
+        width: calc(100% - 90px)
+    }
+
+    .light-style[dir=rtl] .user-card .border-container {
+        border-right: 0;
+        border-left: 1px solid #e4e6e8
+    }
+}
+
+@media(min-width: 992px) {
+    .dark-style .user-card .border-container-lg {
+        border-right:1px solid #4e4f6c
+    }
+
+    .dark-style[dir=rtl] .user-card .border-container-lg {
+        border-right: 0;
+        border-left: 1px solid #4e4f6c
+    }
+}
+
+@media(min-width: 576px) {
+    .dark-style .user-card .border-container {
+        border-right:1px solid #4e4f6c
+    }
+
+    .dark-style .timeline .break-text {
+        width: calc(100% - 90px)
+    }
+
+    .dark-style[dir=rtl] .user-card .border-container {
+        border-right: 0;
+        border-left: 1px solid #4e4f6c
+    }
+}
+.user-profile-header-banner img {
+    width: 100%;
+    object-fit: cover;
+    height: 250px
+}
+
+.user-profile-header {
+    margin-top: -2rem
+}
+
+.user-profile-header .user-profile-img {
+    border: 5px solid;
+    width: 120px
+}
+
+.light-style .user-profile-header .user-profile-img {
+    border-color: #fff
+}
+
+.dark-style .user-profile-header .user-profile-img {
+    border-color: #2b2c40
+}
+
+.dataTables_wrapper .card-header .dataTables_filter label {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important
+}
+
+@media(max-width: 767.98px) {
+    .user-profile-header-banner img {
+        height:150px
+    }
+
+    .user-profile-header .user-profile-img {
+        width: 100px
+    }
+}

@@ -1,0 +1,31 @@
+.admin-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.go-home-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #1890ff;
+  border: none;
+  cursor: pointer;
+}
+
+.go-home-button:hover {
+  background-color: #40a9ff;
+}

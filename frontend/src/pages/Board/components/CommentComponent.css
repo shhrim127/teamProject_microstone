@@ -1,0 +1,185 @@
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.author-input,
+.comment-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.comment-submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-submit-button:hover {
+  background-color: #0056b3;
+}
+
+.comments-list {
+  margin-top: 10px;
+}
+
+.comment-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.comment-author {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #777;
+}
+
+.comment-content {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.like-button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.like-button:hover {
+  color: #0056b3;
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.comment-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-button {
+  background-color: transparent;
+  border: none;
+  color: #ff6347; /* 신고 버튼 색상 *//* 신고 모달 스타일 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 딤 처리 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.modal h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.report-reason-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.submit-report-button,
+.cancel-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-report-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.submit-report-button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.report-button:hover {
+  color: #ff4500; /* 신고 버튼 호버 색상 */
+}
+
